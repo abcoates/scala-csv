@@ -7,20 +7,14 @@ import scala.io.BufferedSource
 
 /**
  * Tests for CSV object.
+ * GitHub: https://github.com/abcoates/scala-csv
  */
 class CSVSuite extends FlatSpec with BeforeAndAfter {
 
   val csvFile = new File("res/csv/csv-test-file.csv")
-  var csvString:Option[String] = None
 
   before {
     assert((csvFile exists) && (csvFile canRead), "CSV file does not exist or cannot be read: " + csvFile.getAbsolutePath)
-    val csvIn = new BufferedSource(new FileInputStream(csvFile))
-    val csvLines = csvIn.getLines.toList
-    // println("CSV line count = " + csvLines.size)
-    csvString = Some(csvLines.mkString("\n"))
-    assert(csvString.getOrElse("").length >= 1, "failed to read CSV data from CSV file: " + csvFile.getAbsolutePath)
-    // println("CSV data:\n" + csvString.get)
   }
 
   "The CSV object" should "be able to parse a 1-cell CSV string" in {
@@ -40,18 +34,18 @@ class CSVSuite extends FlatSpec with BeforeAndAfter {
 
   it should "be able to parse a 1-cell CSV string with double quotes" in {
     val csv = "\"b\"\"b\""
-    assert(CSV.parse(csv) === List(List("b\"\b")), "1-cell CSV data with double quotes did not match")
+    assert(CSV.parse(csv) === List(List("b\"b")), "1-cell CSV data with double quotes did not match")
   }
 
   it should "be able to parse a CSV file with newlines and double quotes in cells" in {
-    val expected = List(
+    val expected: List[List[String]] = List(
       List("A","B","C","D"),
       List("a","b","c","d"),
       List("aa","b\nb","c\nc","dd"),
       List("aaa","b\n\"\n\"\"\n\"\"\"\nb","c\n\"\n\"\"\n\"\"\"\nc","ddd"),
       List("aaaa","bbbb","cccc","dddd")
     )
-    assert(CSV.parse(csvString.get) === expected, "CSV data with newlines and double quotes did not match")
+    assert(CSV.parse(csvFile) === expected, "CSV data with newlines and double quotes did not match")
   }
 
 }

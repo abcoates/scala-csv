@@ -2,15 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4545c9a0-c9d7-4ee0-88c7-190f9d75dd4d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/contakt/csv/CSV.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/org/contakt/csv/test/CSVSuite.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/highlighting.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/contakt/csv/CSV.scala" afterPath="$PROJECT_DIR$/src/org/contakt/csv/CSV.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/org/contakt/csv/test/CSVSuite.scala" afterPath="$PROJECT_DIR$/test/org/contakt/csv/test/CSVSuite.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="scala-csv.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="4545c9a0-c9d7-4ee0-88c7-190f9d75dd4d" time="1377890193998" ignored="false" />
-    <file path="/CSV.scala" changelist="4545c9a0-c9d7-4ee0-88c7-190f9d75dd4d" time="1377810219232" ignored="false" />
-    <file path="/CSVSuite.scala" changelist="4545c9a0-c9d7-4ee0-88c7-190f9d75dd4d" time="1377893763154" ignored="false" />
+    <file path="/CSV.scala" changelist="4545c9a0-c9d7-4ee0-88c7-190f9d75dd4d" time="1377904161742" ignored="false" />
+    <file path="/CSVSuite.scala" changelist="4545c9a0-c9d7-4ee0-88c7-190f9d75dd4d" time="1377903400823" ignored="false" />
+    <file path="/README.md" changelist="4545c9a0-c9d7-4ee0-88c7-190f9d75dd4d" time="1377899572069" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,8 +90,10 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/org/contakt/csv/CSV.scala" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/res/csv/csv-test-file.csv" />
         <option value="$PROJECT_DIR$/test/org/contakt/csv/test/CSVSuite.scala" />
+        <option value="$PROJECT_DIR$/src/org/contakt/csv/CSV.scala" />
       </list>
     </option>
   </component>
@@ -481,7 +485,9 @@
     <entry file="file://$PROJECT_DIR$/src/org/contakt/csv/CSV.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="e#25#63#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -492,16 +498,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/contakt/csv/CSV.scala">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="23" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0">
+        <state line="10" column="97" selection-start="482" selection-end="482" vertical-scroll-proportion="0.33112583">
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/csv/csv-test-file.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="6" selection-start="27" selection-end="27" vertical-scroll-proportion="0.09933775">
+        <state line="15" column="0" selection-start="104" selection-end="104" vertical-scroll-proportion="0.49668875">
           <folding />
         </state>
       </provider>
@@ -511,8 +520,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/org/contakt/csv/test/CSVSuite.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="64" selection-start="1898" selection-end="1898" vertical-scroll-proportion="0.59375">
+        <state line="15" column="0" selection-start="368" selection-end="368" vertical-scroll-proportion="0.375">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/contakt/csv/CSV.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="0" selection-start="1382" selection-end="1382" vertical-scroll-proportion="0.80728054">
+          <folding>
+            <element signature="e#25#63#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
